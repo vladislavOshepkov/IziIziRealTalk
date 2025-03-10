@@ -1,0 +1,34 @@
+﻿<Page x:Class="RPM_PR_23._106_Oshepkov_PR3_v2.Pages.EmployeesEdit"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:local="clr-namespace:RPM_PR_23._106_Oshepkov_PR3_v2.Pages"
+mc:Ignorable="d"
+d:DesignHeight="450"
+d:DesignWidth="800" 
+Title="Auto"
+Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="1" HorizontalAlignment="Left" Height="100" Margin="447,24,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="68,15,0,0" VerticalAlignment="Top" Content="Фамилия" FontFamily="Times New Roman"/>
+        <TextBox x:Name="tbSurname" Grid.Column="1" HorizontalAlignment="Left" Margin="202,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="70,60,0,0" VerticalAlignment="Top" Content="Имя" FontFamily="Times New Roman"/>
+        <TextBox x:Name="tbName" Grid.Column="1" HorizontalAlignment="Center" Margin="0,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="68,106,0,0" VerticalAlignment="Top" Content="Отчество" FontFamily="Times New Roman"/>
+        <TextBox x:Name="tbPatronymic" Grid.Column="1" HorizontalAlignment="Center" Margin="0,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="70,155,0,0" VerticalAlignment="Top" Content="Пол" FontFamily="Times New Roman"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="68,210,0,0" VerticalAlignment="Top" Content="Номер телефона" FontFamily="Times New Roman" FontSize="48"/>
+        <TextBox x:Name="tbPhoneNumber" Grid.Column="1" HorizontalAlignment="Left" Margin="202,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="70,263,0,0" VerticalAlignment="Top" Content="Должность" FontFamily="Times New Roman"/>
+        <ComboBox x:Name="cbGender" Grid.Column="1" HorizontalAlignment="Center" Margin="0,160,0,0" VerticalAlignment="Top" Width="200" Height="40" FontFamily="Times New Roman" FontSize ="10"/>
+        <ComboBox x:Name="cbPosts" Grid.Column="1" HorizontalAlignment="Left" Margin="202,268,0,0" VerticalAlignment="Top" Width="200" Height="40"/>
+        <Button Grid.Column="1" Content="Сохранить" HorizontalAlignment="Left" Margin="70,345,0,0" VerticalAlignment="Top" Click="SaveEmployeeChanges"/>
+        <Button Grid.Column="1" Content="Отменить" HorizontalAlignment="Left" Margin="282,345,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Page>
